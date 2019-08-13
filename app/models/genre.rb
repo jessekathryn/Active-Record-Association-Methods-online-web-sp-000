@@ -10,6 +10,8 @@ class Genre < ActiveRecord::Base
     self.artists.count
   end
 
+#needing specific attribute need to iterate
+
   def all_artist_names
     self.artists.collect do |n|
       n.name
